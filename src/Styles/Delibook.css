@@ -1,0 +1,154 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.delibook{
+    background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('../assets/orange.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    margin: 20px 20px;
+    border: 2px solid rgb(52, 166, 219);
+    border-radius: 20px;
+    padding: 20px 60px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
+    margin: 12px 0px;
+    color: white;
+    text-shadow: #3f3f3f 1px 1px 2px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    color: black;
+    text-decoration: none;
+}
+nav ul li a{
+    color: rgb(250, 248, 248);
+    text-shadow: #3f3f3f 1px 1px 2px;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: rgb(235, 237, 238);
+    /* font-weight: 800; */
+    transition: all 0.3s ease;
+
+}
+.booking button{
+    margin: 0px 10px;
+    gap: 20px;
+    max-width: 1000px;
+    /* height: auto;  */
+    color: rgb(7, 7, 7);
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+
+}
+.booking button:hover{
+    background-color: rgb(52, 166, 219);
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+.herosection{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 60px;
+}
+.herosection h3{
+    color: rgb(145, 118, 1);
+}
+.herosection h1{
+    color: rgb(24, 23, 23);
+    font-size: 60px;
+    font-weight: bold;
+}
+.booknow{
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 1000px;
+    height: auto;
+    color: rgb(7, 7, 7);
+    padding: 25px 30px;
+    border: 2px solid rgb(52, 166, 219);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.booknow-section{
+    flex: 1;
+    min-width: 150px;
+    background-color: #fff;
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+.booknow-section:hover{
+    border-color: rgb(52, 166, 219);
+    box-shadow: 0 4px 12px rgba(52, 166, 219, 0.2);
+    transform: translateY(-2px);
+}
+.booknow-section h1{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(52, 166, 219);
+    margin: 0;
+}
+.booknow-section p{
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(38, 39, 39);
+    margin: 0;
+}
+.booknow-section p:first-of-type{
+    color: #999;
+    font-weight: 400;
+}
+.booknow-section button{
+    width: 100%;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, rgb(52, 166, 219) 0%, #2a96d9 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(52, 166, 219, 0.3);
+}
+.booknow-section button:hover{
+    background: linear-gradient(135deg, #2a96d9 0%, rgb(52, 166, 219) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(52, 166, 219, 0.4);
+}
+.booknow-section button:active{
+    transform: translateY(0);
+}
