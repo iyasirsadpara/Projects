@@ -5,7 +5,7 @@
   font-family: sans-serif;
 }
 .delibook{
-    background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('../assets/orange.jpg');
+    background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('../assets/darksk.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -40,11 +40,12 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: rgb(235, 237, 238);
+    color: rgb(6, 158, 235);
     /* font-weight: 800; */
     transition: all 0.3s ease;
 
 }
+
 .booking button{
     margin: 0px 10px;
     gap: 20px;
@@ -61,7 +62,8 @@ nav ul li a:hover{
     background-color: rgb(52, 166, 219);
     color: white;
     border: 2px solid rgb(255, 255, 255);
-    transition: all 0.3s ease;
+    translate: 0px -2px;
+    transition: all 0.6s ease;
 }
 .herosection{
     margin-top: 120px;
@@ -73,12 +75,20 @@ nav ul li a:hover{
     padding: 20px 60px;
 }
 .herosection h3{
-    color: rgb(145, 118, 1);
+    color: rgb(253, 249, 2);
 }
 .herosection h1{
-    color: rgb(24, 23, 23);
+    color: rgb(255, 255, 255);
     font-size: 60px;
     font-weight: bold;
+    text-shadow: #000000;
+}
+.herosection p{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 700;
+    text-shadow: #000000 1px 1px 2px    ;
+    text-shadow: #000000;
 }
 .booknow{
     background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
@@ -104,8 +114,7 @@ nav ul li a:hover{
     background-color: #fff;
     padding: 15px 15px;
     display: flex;
-    flex-direction: column;
-    gap: 8px;
+    gap: 18px;
     border-radius: 10px;
     border: 1px solid #e0e0e0;
     transition: all 0.3s ease;
@@ -123,7 +132,7 @@ nav ul li a:hover{
 }
 .booknow-section p{
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 700;
     color: rgb(38, 39, 39);
     margin: 0;
 }
@@ -131,13 +140,15 @@ nav ul li a:hover{
     color: #999;
     font-weight: 400;
 }
-.booknow-section button{
-    width: 100%;
+.booknow2-section button{
+    width: 120px;
+    height: 55px;
+
     padding: 12px 25px;
     background: linear-gradient(135deg, rgb(52, 166, 219) 0%, #2a96d9 100%);
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 30px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;

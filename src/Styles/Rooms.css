@@ -3,6 +3,12 @@
   max-width: 1400px;
   margin: 0 auto;
 }
+.card-divider{
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgb(16, 122, 221), transparent);
+    margin-bottom: 45px;
+    margin-top: -80px;
+}
 
 .rooms-header {
   text-align: center;
@@ -84,17 +90,17 @@
   z-index: 10;
 }
 
-.wishlist-btn:hover {
+/* .wishlist-btn:hover {
   background: white;
   transform: scale(1.1);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-}
-
+} */
+/* 
 .wishlist-btn.active {
   background: #ff6b6b;
   color: white;
   transform: scale(1.1);
-}
+} */
 
 .room-rating {
   position: absolute;
@@ -213,59 +219,5 @@
   transform: translateY(0);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .rooms-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
 
-  .rooms-header h1 {
-    font-size: 32px;
-  }
 
-  .room-details {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .room-footer {
-    flex-direction: column;
-    gap: 12px;
-    align-items: flex-start;
-  }
-
-  .book-btn {
-    width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .rooms-container {
-    padding: 30px 15px;
-  }
-
-  .rooms-header h1 {
-    font-size: 26px;
-  }
-
-  .room-card {
-    border-radius: 12px;
-  }
-
-  .room-image {
-    height: 220px;
-  }
-
-  .room-info {
-    padding: 18px;
-  }
-
-  .room-details {
-    gap: 10px;
-    padding: 12px;
-  }
-
-  .detail-item {
-    font-size: 12px;
-  }
-}

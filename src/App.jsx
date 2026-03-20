@@ -1,9 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import './Styles/Delibook.css'
-import Navbar from './Components/Navbar'
 import Herosection from './Components/Herosection'
-import Accomodation from './Components/Accomodation'
 import Delibook from './Components/Delibook'
 import Cards from './Components/Cards'
 import Rooms from './Components/Rooms'
@@ -18,15 +16,13 @@ function App() {
   return (
     <>
       {/* <Herosection/> */}
-      {/* <Accomodation/> */}
       <Delibook/>
       <Cards/>
       <Rooms/>
       <Thirdsection/>
       <Sectionfour/>
       <Sectionfive/>
-      {/* <Footer/>  */}
-      {/* <Navbar/> */}
+      <Footer/> 
 
     </>
   )

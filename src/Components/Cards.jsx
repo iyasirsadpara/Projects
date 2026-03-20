@@ -1,5 +1,5 @@
 import React from 'react'
-// import '../Styles/Cards.css'
+
 
 const Cards = () => {
   return (
@@ -7,6 +7,7 @@ const Cards = () => {
       <h1>Where Comfort Meets Luxury</h1>
       <p>Discover handpicked stays that blend luxury and practicality</p>
     </div>
+    
   )
 }
 

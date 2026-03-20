@@ -141,18 +141,6 @@
     font-weight: 600;
 }   
 
-.book-btn{
-    background-color: rgb(188, 221, 66);
-    color: rgb(24, 23, 23);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-weight: 600;
-    cursor: pointer;
-    font-size: 13px;
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.3s ease;
-}
 
 .book-btn:hover{
     background-color: rgb(180, 235, 0);

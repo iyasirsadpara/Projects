@@ -6,19 +6,13 @@ const Footer = () => {
     <footer className='footer'>
       <div className='footer-container'>
         <div className='footer-content'>
-          {/* About Section */}
+         
           <div className='footer-section'>
             <h3 className='footer-title'>DreamLand</h3>
-            <p className='footer-desc'>Discover your perfect getaway with DreamLand. We provide exceptional hotel services and memorable experiences worldwide.</p>
-            <div className='social-links'>
-              <a href='#' className='social-icon'>f</a>
-              <a href='#' className='social-icon'>X</a>
-              <a href='#' className='social-icon'>in</a>
-              <a href='#' className='social-icon'>ig</a>
-            </div>
+            <p className='footer-desc'>Discover your perfect getaway with DreamLand. We provide exceptional hotel services and memorable experiences worldwide.</p> 
           </div>
 
-          {/* Quick Links */}
+          
           <div className='footer-section'>
             <h4 className='footer-subtitle'>Quick Links</h4>
             <ul className='footer-links'>
@@ -30,7 +24,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services */}
+        
           <div className='footer-section'>
             <h4 className='footer-subtitle'>Services</h4>
             <ul className='footer-links'>
@@ -42,25 +36,24 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
+         
           <div className='footer-section'>
             <h4 className='footer-subtitle'>Contact Info</h4>
             <ul className='footer-contact'>
               <li><strong>Email:</strong> info@dreamland.com</li>
-              <li><strong>Phone:</strong> +1 (800) 123-4567</li>
+              <li><strong>Phone:</strong> +923447606752</li>
               <li><strong>Address:</strong> 123 Hotel Street, Prime City</li>
               <li><strong>Hours:</strong> 24/7 Support Available</li>
             </ul>
           </div>
         </div>
 
-        {/* Bottom Footer */}
         <div className='footer-bottom'>
           <div className='footer-divider'></div>
           <div className='footer-bottom-content'>
             <p>&copy; 2024 DreamLand Hotels. All rights reserved.</p>
             <div className='footer-legal'>
-              <a href='#'>Privacy Policy</a>
+              <a href='#'>Priva cy Policy</a>
               <a href='#'>Terms & Conditions</a>
               <a href='#'>Cookie Policy</a>
             </div>

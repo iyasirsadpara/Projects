@@ -21,10 +21,10 @@ body{
 .comfort h1{
     color: rgb(24, 23, 23);
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 800;
 }
 .comfort p{
-    color: rgb(24, 23, 23);
+    color: rgb(110, 109, 109);
     font-size: 18px;
     max-width: 800px;
     text-align: center;

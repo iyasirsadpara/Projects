@@ -1,4 +1,5 @@
 import React from 'react'
+import '../Styles/Delibook.css'
 
 const Delibook = () => {
     return (
@@ -46,7 +47,7 @@ const Delibook = () => {
                         <p>2 Adults, 1 Children</p>
                     </div>
                 </div>
-                <div className='booknow-section'>
+                <div className='booknow2-section'>
                     <button>search</button>
                 </div>
 

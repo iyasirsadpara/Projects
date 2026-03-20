@@ -48,7 +48,9 @@ const Rooms = () => {
   }
 
   return (
+    
     <div className='rooms-container'>
+      <div className='card-divider'></div>
       <div className='rooms-header'>
         <h1>Featured Rooms</h1>
         <p>Discover our most popular accommodations</p>
@@ -98,7 +100,6 @@ const Rooms = () => {
               
               <div className='room-footer'>
                 <div className='price'>
-                  <span className='currency'>$</span>
                   <span className='amount'>{room.price}</span>
                   <span className='duration'>/night</span>
                 </div>
