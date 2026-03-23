@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, createContext } from 'react'
 import './App.css'
 import './Styles/Delibook.css'
 import Herosection from './Components/Herosection'
@@ -9,22 +9,32 @@ import Thirdsection from './Components/Thirdsection'
 import Sectionfour from './Components/Sectionfour'
 import Sectionfive from './Components/Sectionfive'
 import Footer from './Components/Footer'
+import BookingForm from './Components/BookingForm'
+
+// Create context for booking form
+export const BookingContext = createContext()
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isBookingFormOpen, setIsBookingFormOpen] = useState(false)
+
+  const openBookingForm = () => setIsBookingFormOpen(true)
+  const closeBookingForm = () => setIsBookingFormOpen(false)
 
   return (
-    <>
-      {/* <Herosection/> */}
-      <Delibook/>
-      <Cards/>
-      <Rooms/>
-      <Thirdsection/>
-      <Sectionfour/>
-      <Sectionfive/>
-      <Footer/> 
-
-    </>
+    <BookingContext.Provider value={{ openBookingForm, closeBookingForm }}>
+      <>
+        {/* <Herosection/> */}
+        <Delibook/>
+        <Cards/>
+        <Rooms/>
+        <Thirdsection/>
+        <Sectionfour/>
+        <Sectionfive/>
+        <Footer/>
+        
+        <BookingForm isOpen={isBookingFormOpen} onClose={closeBookingForm} />
+      </>
+    </BookingContext.Provider>
   )
 } 
 

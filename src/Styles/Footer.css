@@ -116,8 +116,8 @@
 }
 
 .footer-divider{
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgb(100, 100, 100), transparent);
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgb(245, 255, 100), transparent);
     margin-bottom: 25px;
 }
 

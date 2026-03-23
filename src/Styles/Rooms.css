@@ -4,7 +4,7 @@
   margin: 0 auto;
 }
 .card-divider{
-    height: 1px;
+    height: 3px;
     background: linear-gradient(90deg, transparent, rgb(16, 122, 221), transparent);
     margin-bottom: 45px;
     margin-top: -80px;
@@ -89,7 +89,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   z-index: 10;
 }
-
+upd
 /* .wishlist-btn:hover {
   background: white;
   transform: scale(1.1);

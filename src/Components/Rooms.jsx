@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import '../Styles/Rooms.css'
+import { BookingContext } from '../App'
 
 const Rooms = () => {
   const [wishlist, setWishlist] = useState(false)
+  const { openBookingForm } = useContext(BookingContext)
 
   const rooms = [
     {
@@ -103,7 +105,7 @@ const Rooms = () => {
                   <span className='amount'>{room.price}</span>
                   <span className='duration'>/night</span>
                 </div>
-                <button className='book-btn'>Book Now</button>
+                <button className='book-btn' onClick={openBookingForm}>Book Now</button>
               </div>
             </div>
           </div>
