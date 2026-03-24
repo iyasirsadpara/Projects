@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import '../Styles/Sectionfour.css'
+import { BookingContext } from '../App'
 
 const Sectionfour = () => {
+  const { openBookingForm } = useContext(BookingContext)
+
   return (
     <div className='sectionfour'>
       <div className='section-four-content'>
@@ -35,7 +38,7 @@ const Sectionfour = () => {
                     <span>4.9</span>
                   </div>
                 </div>
-                <button className='book-btn'>Book Now</button>
+                <button className='book-btn' onClick={openBookingForm}>Book Now</button>
               </div>
             </div>
           </div>

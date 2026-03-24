@@ -1,7 +1,6 @@
 import { useState, createContext } from 'react'
 import './App.css'
 import './Styles/Delibook.css'
-import Herosection from './Components/Herosection'
 import Delibook from './Components/Delibook'
 import Cards from './Components/Cards'
 import Rooms from './Components/Rooms'
