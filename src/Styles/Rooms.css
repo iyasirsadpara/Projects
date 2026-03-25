@@ -89,18 +89,6 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   z-index: 10;
 }
-upd
-/* .wishlist-btn:hover {
-  background: white;
-  transform: scale(1.1);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-} */
-/* 
-.wishlist-btn.active {
-  background: #ff6b6b;
-  color: white;
-  transform: scale(1.1);
-} */
 
 .room-rating {
   position: absolute;

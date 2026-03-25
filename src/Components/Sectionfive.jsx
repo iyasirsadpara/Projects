@@ -23,7 +23,7 @@ const Sectionfive = () => {
                 </div>
                 <p>Our Best Customer</p>
                 <span>Pakistan</span>
-                <span>&&&&&&&</span>
+                <span>★ ★ ★ ★★</span>
 
             </div>
         </div>

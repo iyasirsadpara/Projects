@@ -41,7 +41,7 @@ const Rooms = () => {
       size: "1800 ft²",
       price: 199,
       rating: 4.7,
-      image: "url('https://images.unsplash.com/photo-1618773928121-c37678de7e6b?w=500&h=400&fit=crop')"
+      image:"url('https://images.unsplash.com/photo-1774105618837-21ea179aef8a?q=80&w=693&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
     }
   ]
 
@@ -112,7 +112,7 @@ const Rooms = () => {
         ))}
       </div>
       <div className="chatbox">
-        <button onClick={openChatbox}>chat</button>
+        <button onClick={openChatbox}>🗨</button>
       </div>
     </div>
 

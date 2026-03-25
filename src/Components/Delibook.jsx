@@ -31,28 +31,28 @@ const Delibook = () => {
             </div>
             <div className='booknow'>
                 <div className='booknow-section'>
-                    <h1>L</h1>
+                    <h1>✈️</h1>
                     <div>
                         <p>Where to</p>
                         <p>Milian, italy</p>
                     </div>
                 </div>
                 <div className='booknow-section'>
-                    <h1>L</h1>
+                    <h1>📅</h1>
                     <div>
                         <p>Date</p>
                         <p>June 15, 2023</p>
                     </div>
                 </div>
                 <div className='booknow-section'>
-                    <h1>W</h1>
+                    <h1>👥</h1>
                     <div>
                         <p>Who</p>
                         <p>2 Adults, 1 Children</p>
                     </div>
                 </div>
                 <div className='booknow2-section'>
-                    <button>search</button>
+                    <button>🔍︎ search</button>
                 </div>
 
             </div>
