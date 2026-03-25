@@ -32,3 +32,19 @@ body{
 #bookingform{
     display: none;
 }
+.chatbox{
+    position: fixed;
+    bottom: 80px;
+    right: 40px;
+    z-index: 1000;
+    box-shadow: #2e2929 ;
+}
+.chatbox button{
+    width: 62px;
+    height: 62px;
+    padding: 12px;
+    background-color: rgb(62, 135, 218);
+    border: none ;
+    border-radius: 50%;
+    font-weight: bold;
+}

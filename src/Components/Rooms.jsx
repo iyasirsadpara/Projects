@@ -4,7 +4,7 @@ import { BookingContext } from '../App'
 
 const Rooms = () => {
   const [wishlist, setWishlist] = useState(false)
-  const { openBookingForm } = useContext(BookingContext)
+  const { openBookingForm, openChatbox } = useContext(BookingContext)
 
   const rooms = [
     {
@@ -50,22 +50,22 @@ const Rooms = () => {
   }
 
   return (
-    
+
     <div className='rooms-container'>
       <div className='card-divider'></div>
       <div className='rooms-header'>
         <h1>Featured Rooms</h1>
         <p>Discover our most popular accommodations</p>
       </div>
-      
+
       <div className='rooms-grid'>
         {rooms.map((room) => (
           <div key={room.id} className='room-card'>
-            <div 
+            <div
               className='room-image'
               style={{ backgroundImage: room.image }}
             >
-              <button 
+              <button
                 className={`wishlist-btn ${wishlist ? 'active' : ''}`}
                 onClick={toggleWishlist}
               >
@@ -76,11 +76,11 @@ const Rooms = () => {
                 <span>{room.rating}</span>
               </div>
             </div>
-            
+
             <div className='room-info'>
               <h2>{room.title}</h2>
               <p className='location'> {room.location}</p>
-              
+
               <div className='room-details'>
                 <div className='detail-item'>
                   <span className='icon'></span>
@@ -99,7 +99,7 @@ const Rooms = () => {
                   <span>{room.size}</span>
                 </div>
               </div>
-              
+
               <div className='room-footer'>
                 <div className='price'>
                   <span className='amount'>{room.price}</span>
@@ -111,7 +111,11 @@ const Rooms = () => {
           </div>
         ))}
       </div>
+      <div className="chatbox">
+        <button onClick={openChatbox}>chat</button>
+      </div>
     </div>
+
   )
 }
 

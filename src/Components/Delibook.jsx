@@ -22,6 +22,7 @@ const Delibook = () => {
                     <button onClick={openBookingForm}>Book Now</button>
                 </div>
             </nav>
+
             <div className="herosection">
                 <h3>123.8k + Happy Customers</h3>
                 <h1>Welcom to DreamLand Hotel</h1>
@@ -55,6 +56,7 @@ const Delibook = () => {
                 </div>
 
             </div>
+            
 
         </div>
     )

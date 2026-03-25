@@ -9,20 +9,24 @@ import Sectionfour from './Components/Sectionfour'
 import Sectionfive from './Components/Sectionfive'
 import Footer from './Components/Footer'
 import BookingForm from './Components/BookingForm'
+import Chatbox from './Components/Chatbox'
 
 // Create context for booking form
 export const BookingContext = createContext()
 
 function App() {
   const [isBookingFormOpen, setIsBookingFormOpen] = useState(false)
+  const [isChatboxOpen, setIsChatboxOpen] = useState(false)
 
   const openBookingForm = () => setIsBookingFormOpen(true)
   const closeBookingForm = () => setIsBookingFormOpen(false)
+  const openChatbox = () => setIsChatboxOpen(true)
+  const closeChatbox = () => setIsChatboxOpen(false)
 
   return (
-    <BookingContext.Provider value={{ openBookingForm, closeBookingForm }}>
+    <BookingContext.Provider value={{ openBookingForm, closeBookingForm, openChatbox, closeChatbox }}>
       <>
-        {/* <Herosection/> */}
+      
         <Delibook/>
         <Cards/>
         <Rooms/>
@@ -30,6 +34,8 @@ function App() {
         <Sectionfour/>
         <Sectionfive/>
         <Footer/>
+        
+        {isChatboxOpen && <Chatbox isOpen={isChatboxOpen} onClose={closeChatbox} />}
         
         <BookingForm isOpen={isBookingFormOpen} onClose={closeBookingForm} />
       </>
