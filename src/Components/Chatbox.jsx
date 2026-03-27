@@ -10,7 +10,7 @@ const Chatbox = ({ onClose, isOpen }) => {
         <div className="inner-container">
             <h2>Hello, How can I help you?</h2>
             <button onClick={onClose} className='close-btn'>×</button>
-        </div>
+        </div>  
         <div className='conversation-container'>
             <div className="agent-msg">
                 agent
