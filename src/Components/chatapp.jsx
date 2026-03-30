@@ -1,7 +1,8 @@
 import { useState } from "react";
-import ChatboxIcon from "./Components/ChatboxIcon";
+import ChatboxIcon from "./ChatboxIcon";
 
-const App = () => {
+const ChatApp = ({ isOpen, onClose }) => {
+  if (!isOpen) return null;
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([
     {
@@ -30,7 +31,7 @@ const App = () => {
       return "Yasir Hussain";
     }
     else {
-      return <a href="https://chatgpt.com/">click here for more update</a>;
+      return <a href="https://chatgpt.com/ " target="blank">click here for more update</a>;
     }
   };
 
@@ -62,8 +63,8 @@ const App = () => {
   };
 
   return (
-    <div className="container">
-      <div className="chatbot-popup">
+    <div className="chatbot-container">
+      <div className="chatbot-popup" onClick={(e) => e.stopPropagation()}>
 
         {/* chatheader */}
         <div className="chat-header">
@@ -71,8 +72,8 @@ const App = () => {
             <ChatboxIcon />
             <h2 className="logo-text">Chatbot</h2>
           </div>
-          <button className="material-symbols-rounded">
-            keyboard_arrow_down
+          <button className="material-symbols-rounded" onClick={onClose}>
+            ✕
           </button>
         </div>
 
@@ -117,4 +118,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default ChatApp;

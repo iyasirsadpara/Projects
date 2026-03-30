@@ -36,7 +36,7 @@ const Thirdsection = () => {
                 <div className="card-images">
                     {/* <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="" /> */}
                     <div className='rating'>
-                         ⭐⭐ 4.9 Avg Rating
+                          4.9 Avg Rating
                     </div>
                     <div className='img'>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROF09ab1MsLxFHF-3cvTwl40uqyVXx34OX0Q&s" alt="thisis " />

@@ -9,22 +9,24 @@ import Sectionfour from './Components/Sectionfour'
 import Sectionfive from './Components/Sectionfive'
 import Footer from './Components/Footer'
 import BookingForm from './Components/BookingForm'
-import Chatbox from './Components/Chatbox'
+import ChatApp from './Components/chatapp'
+import ChatboxIcon from './Components/ChatboxIcon'
+
 
 // Create context for booking form
 export const BookingContext = createContext()
 
 function App() {
   const [isBookingFormOpen, setIsBookingFormOpen] = useState(false)
-  const [isChatboxOpen, setIsChatboxOpen] = useState(false)
+  const [isChatappOpen, setIsChatappOpen] = useState(false)
 
   const openBookingForm = () => setIsBookingFormOpen(true)
   const closeBookingForm = () => setIsBookingFormOpen(false)
-  const openChatbox = () => setIsChatboxOpen(true)
-  const closeChatbox = () => setIsChatboxOpen(false)
+  const openChatapp = () => setIsChatappOpen(true)
+  const closeChatapp = () => setIsChatappOpen(false)
 
   return (
-    <BookingContext.Provider value={{ openBookingForm, closeBookingForm, openChatbox, closeChatbox }}>
+    <BookingContext.Provider value={{ openBookingForm, closeBookingForm }}>
       <>
       
         <Delibook/>
@@ -35,7 +37,15 @@ function App() {
         <Sectionfive/>
         <Footer/>
         
-        {isChatboxOpen && <Chatbox isOpen={isChatboxOpen} onClose={closeChatbox} />}
+        {/* Floating Chat Button */}
+        <div className="chatbox">
+          <button onClick={openChatapp} title="Open Chat">
+            <ChatboxIcon />
+          </button>
+        </div>
+        
+        {/* Chat Modal */}
+        <ChatApp isOpen={isChatappOpen} onClose={closeChatapp} />
         
         <BookingForm isOpen={isBookingFormOpen} onClose={closeBookingForm} />
       </>

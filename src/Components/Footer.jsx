@@ -9,7 +9,13 @@ const Footer = () => {
          
           <div className='footer-section'>
             <h3 className='footer-title'>DreamLand</h3>
-            <p className='footer-desc'>Discover your perfect getaway with DreamLand. We provide exceptional hotel services and memorable experiences worldwide.</p> 
+            <p className='footer-desc'>Discover your perfect getaway with DreamLand. We provide exceptional hotel services and memorable experiences worldwide.</p>
+            <div className='social-icons'>
+              <a href='https://facebook.com' target='_blank' rel='noopener noreferrer' title='Facebook'>F</a>
+              <a href='https://twitter.com' target='_blank' rel='noopener noreferrer' title='Twitter'>X</a>
+              <a href='https://instagram.com' target='_blank' rel='noopener noreferrer' title='Instagram'>I</a>
+              <a href='https://linkedin.com' target='_blank' rel='noopener noreferrer' title='LinkedIn'>In</a>
+            </div>
           </div>
 
           

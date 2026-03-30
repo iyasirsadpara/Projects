@@ -46,6 +46,35 @@
     margin-bottom: 20px;
 }
 
+.social-icons{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.social-icons a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(200, 255, 0, 0.2);
+    border: 2px solid rgb(200, 255, 0);
+    border-radius: 50%;
+    color: rgb(200, 255, 0);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-size: 18px;
+}
+
+.social-icons a:hover{
+    background-color: rgb(200, 255, 0);
+    color: rgb(24, 23, 23);
+    transform: translateY(-5px);
+}
+
 .social-links{
     display: flex;
     gap: 15px;

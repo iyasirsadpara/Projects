@@ -42,13 +42,206 @@ body{
 .chatbox button{
     width: 72px;
     height: 72px;
-    padding: 12px;
-    background-color: rgb(62, 135, 218);
+    padding: 0;
+    background-color: rgb(52, 166, 219);
     border: none ;
     border-radius: 50%;
     font-size: 40px;
     font-weight: bold;
     text-align: center;
-    padding: 12px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.chatbox button:hover{
+    background-color: #3a7aa5;
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+.chatbox button svg{
+    width: 35px;
+    height: 35px;
+}
+
+/* Chatbot Open Animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        /* transform: translateX(20px) scale(0.95); */
+        transform: rotateX(90deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(10);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Inter", sans-serif;
+} */
+
+.chatbot-container{
+    position: fixed;
+    bottom: 170px;
+    right: 40px;
+    z-index: 2000;
+    pointer-events: all;
+    animation: slideUp 0.4s ease-out;
+}
+
+.chatbot-popup{
+    width: 420px;
+    overflow: hidden;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0 128px rgba(0,0,0,0.4);
+}
+.chatbot-popup .chat-header{
+    display: flex;
+    padding: 10px 15px;
+    justify-content: space-between;
+    background-color: rgb(62, 135, 218);
+
+}
+.chat-header .header-info{
+    display: flex;
+    gap: 10px;
+    align-items: center;    
+}
+.header-info svg{
+    height: 35px;
+    width: 35px;
+    padding: 6px;
+    flex-shrink: 0;
+    fill: rgb(52, 166, 219);
+    background: white;
+    border-radius: 50%;
+
+}
+.header-info .logo-text{
+    color: white;
+    font-size: 1.31rem;
+    font-weight: 600;
+}
+.chat-header button{
+    height: 40px;
+    width: 40px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.9rem;
+    border-radius: 50%;
+    padding-top: 2px;
+    margin-right: -10px;
+    background: none;
+    transition: 0.2s ease;
+}
+.chat-header button:hover{
+    background: #593bab;
+}
+.chat-body{
+    padding: 25px 22px;
+    height: 460px;
+    overflow-y: auto;
+}
+.chat-body .message{
+    display: flex;
+    gap: 11px;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+.chat-body .bot-message svg{
+    height: 35px;
+    width: 35px;
+    padding: 6px;
+    flex-shrink: 0;
+    fill: #FFFF;
+    align-self: flex-start;
+    margin-top: 2px;
+    background: rgb(62, 135, 218);
+    border-radius: 50%;
+}
+.chat-body .message .message-text{
+    padding: 12px 16px;
+    max-width: 75%;
+
+}
+.chat-body .bot-message .message-text{
+    background: #ebe4fa;
+    border-radius: 13px 13px 13px 3px;
+    margin-bottom: 12px;
+    margin: 0;}
+.chat-body .user-message{
+    flex-direction: column;
+    align-items:flex-end;
+}
+
+.chat-body .user-message .message-text{
+    color: #ffffff;
+    background: rgb(62, 135, 218);
+    border-radius: 13px 3px 13px 13px;
+    margin-bottom: 3px;
+}
+/* ===== FOOTER FIX (no design change, only alignment) ===== */
+
+.chat-footer{
+    padding: 12px 15px;
+    border-top: 1px solid #eee;
+}
+
+.chat-form{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* input */
+.message-input{
+    flex: 1;
+    height: 42px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    padding: 0 14px;
+    font-size: 14px;
+    outline: none;
+}
+
+/* button */
+.send-btn{
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    border: none;
+    background: rgb(62, 135, 218);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* hover same theme */
+.send-btn:hover{
+    background: #593bab;
+}
+.chatbox button svg{
     color: white;
 }
