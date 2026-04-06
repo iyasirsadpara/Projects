@@ -1,0 +1,148 @@
+.sectionfour{
+    background-image: url('../assets/darksky.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px 20px;
+    padding: 60px 60px;
+    border-radius: 30px;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.section-four-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+}
+
+.left-content{
+    flex: 1;
+    color: white;
+}
+
+.left-content h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.left-content p{
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 40px;
+    max-width: 400px;
+}
+
+.images-grid{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.thumb{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.thumb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-card{
+    /* flex: 0 0 auto; */
+}
+
+.hotel-card{
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 320px;
+}
+
+.card-hotel-image{
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.card-hotel-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-details h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: rgb(24, 23, 23);
+}
+
+.card-stats{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 12px;
+    color: rgb(100, 100, 100);
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.card-stats span{
+    flex: 1;
+}
+
+.card-price-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.price-rating{
+    display: flex;
+    flex-direction: column;
+}
+
+.price{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(24, 23, 23);
+    margin: 0;
+}
+
+.rating-badge{
+    font-size: 14px;
+    font-weight: 600;
+}   
+
+
+.book-btn:hover{
+    background-color: rgb(180, 235, 0);
+    transform: scale(1.05);
+}
