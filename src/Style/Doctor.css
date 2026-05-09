@@ -1,0 +1,165 @@
+.doctors {
+  padding: 80px 20px;
+  background: #edf9ff;
+}
+
+/* Header */
+.doctors-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.doctors-label {
+  background-color: #dbeafe;
+  color:#000000;
+  padding: 12px 30px;
+  border-radius: 20px;
+  display: inline-block;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-bottom: 15px;
+  transition: 0.2   s ease;
+}
+.doctors-label:hover{
+  color: #1d4ed8;
+  cursor: pointer;
+}
+.doctors-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.doctors-subtitle p {
+  font-size: 16px;
+  color: #6a6867;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 10px;
+
+
+}
+
+/* Grid */
+.doctors-container {
+  max-width: 1100px;
+  margin: 0 auto 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+/* Card */
+.doctor-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Wrapper */
+.doctor-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+.doctor-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.experience-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: white;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #111827;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Info Section */
+.doctor-info {
+  padding: 25px;
+}
+
+.doctor-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.doctor-qualifications,
+.doctor-specialty {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.qual-icon,
+.spec-icon {
+  font-size: 14px;
+}
+
+/* Tags */
+.doctor-tags {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: #d0f0ff;
+  color: #0ea5e9;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Testimonial */
+.doctors-testimonial {
+  background: white;
+  padding: 40px 50px;
+  border-radius: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.doctors-testimonial p {
+  font-size: 15px;
+  color: #4b4b4b;
+  line-height: 1.8;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+.doctors-testimonial:hover{
+  
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
