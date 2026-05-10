@@ -7,7 +7,7 @@ export default function Navbar() {
         <div className="logo-main">
             ID
         </div>
-        Iqbal <span>Dental</span>
+        <h2>PremiumSmile <span> Dentalnpm Care</span></h2>
       </div>
 
       <div className="nav-links">

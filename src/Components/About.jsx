@@ -10,7 +10,8 @@ export default function About() {
           <div className="about-us">
             About Us
           </div>
-          <h1>Welcome to Iqbal Dental Clinic</h1>
+          <h1>Welcome to Premium Smile
+Dental Care</h1>
           <p>
             We are dedicated to providing exceptional dental care in a comfortable and welcoming environment. With over a decade of experience, our team combines advanced technology with personalized attention to ensure every patient leaves with a healthy, beautiful smile.
           </p>
@@ -22,8 +23,8 @@ export default function About() {
                   <path d="M12 2L15.09 10.26H24L17.45 15.57L20.54 23.83L12 18.52L3.46 23.83L6.55 15.57L0 10.26H8.91L12 2Z" fill="white"/>
                 </svg>
               </div>
-              <h2>10+ Years Experience</h2>
-              <h4>Trusted dental care since 2014</h4>
+              <h2>5+ Years Experience</h2>
+              <h4>Trusted dental care since 2021</h4>
             </div>
 
             <div className="feature">
@@ -47,17 +48,6 @@ export default function About() {
             </div>
             
           </div>
-          <div className="our-mission">
-              <div className="mission">
-                <h2>Our Mission</h2>
-                <p>To provide world-class dental care that exceeds expectations, using the latest technology and techniques while maintaining a warm, patient-centered approach.</p>
-
-              </div>
-              <div className="vision">
-                <h2>Our Vision</h2>
-                <p>To be the most trusted dental clinic in the community, known for excellence, innovation, and compassionate care that transforms lives one smile at a time.</p>
-              </div>
-            </div>
         </div>
 
       </div>

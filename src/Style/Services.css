@@ -4,6 +4,9 @@
 .services {
   padding: 80px 20px;
   background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Header */
@@ -58,7 +61,7 @@
 
 /* Card */
 .service-card {
-  background: #f8fafb;
+  background: #e3f6ff;
   padding: 35px 30px;
   border-radius: 15px;
   transition: all 0.3s ease;
@@ -106,6 +109,8 @@
   font-weight: 600;
   
 }
+
+
 /* Responsive - Tablet */
 @media (max-width: 1024px) {
   .services-title {

@@ -67,12 +67,6 @@ export default function Services() {
           <a href="#" className="book-service">Book Service →</a>
         </div>
       </div>
-
-      <div className="consultation-cta">
-        <h2>Not Sure Which Service You Need?</h2>
-        <p>Book a consultation and our experts will guide you to the best treatment for your needs.</p>
-        <button className="cta-button">Schedule Consultation →</button>
-      </div>
     </section>
   );
 }
